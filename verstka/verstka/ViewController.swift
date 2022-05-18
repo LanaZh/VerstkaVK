@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var label: UILabel {
+        let label = UILabel()
+        label.text = "Имя Фамилия"
+        return label
+    }
+    
+    
+    private lazy var textName = UITextField()
+    private lazy var button = UIButton()
+
 
     override func viewDidLoad() {
+        setupView()
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    private func setupView() {
+        view.backgroundColor = .systemGray6
+    }
 
 }
 
